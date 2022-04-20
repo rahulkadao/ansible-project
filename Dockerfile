@@ -6,7 +6,7 @@ RUN yum install -y httpd \
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page277/royal.zip /var/www/html
 WORKDIR /var/www/html
 RUN unzip royal.zip
-RUN cp -rvf royal/* .
+RUN cp -rvf Royal Free Website Template - Free-CSS.com/* .
 RUN rm -rf royal.zip
 CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
 EXPOSE 80
